@@ -5,9 +5,6 @@ from brain_games.cli import welcome_user
 from brain_games.cli import name
 
 
-welcome_user(name)
-
-
 def greet(text):
     print(text)
 
@@ -15,6 +12,7 @@ def greet(text):
 def main():
     greet('Welcome to the Brain Games!')
 
+welcome_user(name)
 
 if __name__ == '__main__':
     main()
