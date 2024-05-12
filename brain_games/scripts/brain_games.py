@@ -15,4 +15,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-welcome_user(name)
+brain_games.cli.welcome_user(name)
