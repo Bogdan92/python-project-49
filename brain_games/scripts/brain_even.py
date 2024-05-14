@@ -2,10 +2,9 @@
 
 brain-games
 
-def condition(text):
-  print(text)
+from brain_games.task import random_number
 
-def number(text):
+def condition(text):
   print(text)
 
 def answer(text):
@@ -13,7 +12,7 @@ def answer(text):
 
 def main():
   condition('Answer "yes" if the number is even, otherwise answer "no".')
-  number('Question: ')
+  random_number()
 
   answer('Your answer: ')
 
