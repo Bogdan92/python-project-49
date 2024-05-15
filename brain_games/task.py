@@ -6,6 +6,8 @@ from brain_games.cli import welcome_user
 
 from brain_games.cli import name
 
+global name
+
 def condition():
   print('Answer "yes" if the number is even, otherwise answer "no".')
 
@@ -20,8 +22,7 @@ def random_number():
 
 def user_answer():
   condition()
-  for i in range(3):
-    global name
+  for i in range(3):  
     result = random_number()
     print(text(), result)
     answer = prompt.string('Your answer: ')
