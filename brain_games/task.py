@@ -2,6 +2,8 @@ import prompt
 
 import random
 
+from brain_games.cli import name
+
 def condition():
   print('Answer "yes" if the number is even, otherwise answer "no".')
 
