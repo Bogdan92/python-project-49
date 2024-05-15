@@ -6,7 +6,6 @@ from brain_games.task import user_answer
 
 from brain_games.cli import name
 
-global name
 
 def main():
   welcome_user()
