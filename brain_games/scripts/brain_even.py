@@ -8,6 +8,7 @@ from brain_games.cli import name
 
 
 def main():
+  global name
   welcome_user()
   user_answer()
 
