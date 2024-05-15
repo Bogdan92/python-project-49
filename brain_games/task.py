@@ -2,18 +2,35 @@ import prompt
 
 import random
 
+def condition():
+  print('Answer "yes" if the number is even, otherwise answer "no".')
+
+def text():
+  return 'Question:'
+
+def end_game():
+  print(f'Congratulations, {name}!')
+
 def random_number():
-  print('Question:', random.randint(1, 20))
+  return random.randint(1, 20)
 
 def user_answer():
-  answer = prompt.string('Your answer: ')
-  if answer == 'yes':
-    print('
-    
-  
-  print(f"{'Hello'}, {name}!")
-
-def even_uneven(number):
-  return number % 2 == 0
-
-def
+  condition()
+  for i in range(3):
+    result = random_number()
+    print(text(), result)
+    answer = prompt.string('Your answer: ')
+    if answer == 'yes' and result % 2 == 0:
+      print('Correct!')
+    elif answer == 'no' and result % 2 != 0:
+      print('Correct!')
+    elif answer == 'yes' and result % 2 != 0:
+      print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
+      return
+    elif answer == 'no' and result % 2 == 0:
+      print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
+      return
+    else:
+      print(f"'{answer}' is wrong input. Please, use 'yes' or 'no'")
+      return
+  end_game()
