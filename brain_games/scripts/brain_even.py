@@ -1,21 +1,14 @@
 #!/usr/bin/env python3
 
-brain-games
+from brain_games.cli import welcome_user
 
-from brain_games.task import random_number
+from brain_games.task import user_answer
 
-def condition(text):
-  print(text)
-
-def answer(text):
-  print(text)
 
 def main():
-  condition('Answer "yes" if the number is even, otherwise answer "no".')
-  random_number()
+  welcome_user()
+  user_answer()
 
-  answer('Your answer: ')
 
 if __name__ == '__main__':
     main()
-  
