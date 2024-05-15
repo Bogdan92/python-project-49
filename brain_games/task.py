@@ -2,11 +2,10 @@ import prompt
 
 import random
 
-from brain_games.cli import welcome_user
-
-from brain_games.cli import name
-
-global name
+def welcome_user():
+    global name
+    name = prompt.string('May I have your name? ')
+    print(f"{'Hello'}, {name}!")
 
 def condition():
   print('Answer "yes" if the number is even, otherwise answer "no".')
