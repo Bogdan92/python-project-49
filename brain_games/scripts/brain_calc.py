@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brain_games.calc import welcome_user
+from brain_games.task import welcome_user
 
 from brain_games.calc import user_answer
 
