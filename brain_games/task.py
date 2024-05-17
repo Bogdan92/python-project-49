@@ -21,7 +21,7 @@ def random_number():
 
 def user_answer():
   condition()
-  for i in range(3):  
+  for _ in range(3):  
     result = random_number()
     print(text(), result)
     answer = prompt.string('Your answer: ')
