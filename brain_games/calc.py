@@ -40,6 +40,3 @@ def user_answer():
       print(f"{answer} is wrong answer ;(. Correct answer was {result}.\nLet's try again, {name}!")
       return
   end_game()
-
-welcome_user()
-user_answer()
