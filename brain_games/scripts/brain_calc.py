@@ -5,7 +5,6 @@ from brain_games.calc import welcome_user
 from brain_games.calc import user_answer
 
 
-
 def main():
   welcome_user()
   user_answer()
