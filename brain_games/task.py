@@ -21,21 +21,14 @@ def random_number():
 
 def user_answer():
   condition()
-  for _ in range(3):  
+  for i in range(3):  
     result = random_number()
     print(text(), result)
     answer = prompt.string('Your answer: ')
-    if answer == 'yes' and result % 2 == 0:
+    if (answer == 'yes' and result % 2 == 0) or (answer == 'no' and result % 2 != 0):
       print('Correct!')
-    elif answer == 'no' and result % 2 != 0:
-      print('Correct!')
-    elif answer == 'yes' and result % 2 != 0:
-      print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
-      return
-    elif answer == 'no' and result % 2 == 0:
-      print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
-      return
     else:
-      print(f"'{answer}' is wrong input. Please, use 'yes' or 'no'")
-      return
+        correct_answer = 'no' if answer == 'yes' else 'yes'
+        print(f"'{answer}' is the wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
+        return
   end_game()
