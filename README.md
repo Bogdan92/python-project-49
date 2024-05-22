@@ -5,4 +5,4 @@
 
 [![Asciinema - Even](https://img.shields.io/badge/Asciinema%20--%20Even-White?style=flat&logo=Even&logoColor=White)](https://asciinema.org/a/D7QPJIhSQ1UapbFqmzEpKpgJu)
 
-[![Asciinema - Calc](https://img.shields.io/badge/Asciinema%20--%20Calc-White?style=flat&logo=Even&logoColor=White)](https://asciinema.org/a/Fqmomm7OIaoL86P8ppc9TbNHi)
+[![Asciinema - gcd](https://img.shields.io/badge/Asciinema%20--%20gcd-White?style=flat)](https://asciinema.org/a/V883SyP0r8t21Ky5m0wrZ4BWZ)
